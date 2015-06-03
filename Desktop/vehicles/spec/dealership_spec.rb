@@ -45,4 +45,14 @@ require('dealership')
         expect(Dealership.all).to(eq([]))
       end
     end
+
+    describe('.find') do
+      it('finds a dealership by its id number') do
+        test_dealership = Dealership.new("Tesla Super Cars")
+        test_dealership.save
+        test_dealership2 = Dealership.new("Mercedes Gold")
+        test_dealership2.save
+        expect(Dealership.find(test_dealership.id())).to(eq(test_dealership))
+      end
+    end
   end
