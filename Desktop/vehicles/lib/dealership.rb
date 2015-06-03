@@ -28,4 +28,8 @@ class Dealership
   define_method(:save) do
     @@dealerships.push(self)
   end
+
+  define_singleton_method(:clear) do
+    @@dealerships = []
+  end
 end
