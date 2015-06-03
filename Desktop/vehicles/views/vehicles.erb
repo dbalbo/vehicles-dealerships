@@ -1,0 +1,15 @@
+
+
+<div class="container">
+  <h1>Vehicle Finder</h1>
+
+  <h3>Here are a list of all vehicles on this lot:</h3>
+    <ul>
+      <% @vehicles.each do |vehicle| %>
+        <li><a href='/vehicles/<%= vehicle.id %>'><%= vehicle.model %></a></li>
+      <% end %>
+    </ul>
+
+</div>
+
+<a href'/'><h2> Home</h2></a>

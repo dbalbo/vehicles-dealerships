@@ -1,0 +1,37 @@
+
+.container {
+
+  font-size: 50px;
+  border-radius: 10px;
+  color:white !important;
+  text-align: center !important;
+  text-shadow: 2px 2px 4px #000000 !important;
+}
+
+
+body{
+
+  background: url(http://img32.imageshack.us/img32/9529/mercedessalzufer1.jpg)no-repeat center fixed;
+  -webkit-background-size: cover;  ;
+
+
+}
+
+
+.form-control:focus {
+  -webkit-box-shadow: 2px 2px 4px #000000 !important;
+  box-shadow: none !important;
+}
+
+a {
+
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.vehicle {
+
+  text-color: white !important;
+
+
+}
