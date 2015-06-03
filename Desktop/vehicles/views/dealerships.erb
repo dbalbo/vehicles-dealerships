@@ -1,0 +1,15 @@
+
+
+<div class="container">
+  <h1>Dealership Finder</h1>
+
+  <h3>Here are a list of all Dealerships in our Club:</h3>
+    <ul>
+      <% @dealerships.each do |dealership| %>
+        <li><a href='/dealerships/<%= dealership.id %>'><%= dealership.name %></a></li>
+      <% end %>
+    </ul>
+
+</div>
+
+<a href'/'><h2> Home</h2></a>
