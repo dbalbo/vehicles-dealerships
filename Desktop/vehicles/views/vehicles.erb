@@ -1,0 +1,11 @@
+<div class="container">
+  <h1> Vehicles </h1>
+
+  <h3> Here are the vehicles on this lot </h3>
+  <ul>
+    <% @vehicles.each() do |vehicle| %>
+    <li><a href='/vehicles/<%= vehicle.id %>'><%= vehicle.model %></a></li>
+    <% end %>
+  </ul>
+    <a href="/vehicles_form/<%= @dealership_id %>"> Add a Vehicle</a>
+</div>

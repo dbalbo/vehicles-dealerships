@@ -1,10 +1,11 @@
 
  <div class="container">
-    <h1> Here are all the cars in this dealership:</h1>
+    <h1>Here are all the cars in this Dealership:</h1>
 
   <ul>
-    <%= @dealership.cars .each do |car| %>
-    <li><a href='/vehicles/<%= car.id %>'><%= car.make %><%= car.model%> <%= car.year %></a></li>
+    
+    <% @dealership.cars().each() do |car| %>
+      <li><a href='/vehicles/<%= car.id %>'><%= car.make %><%= car.model %> <%= car.year %></a></li>
     <% end %>
   </ul>
 </div>
